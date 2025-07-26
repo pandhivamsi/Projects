@@ -1,0 +1,128 @@
+{
+  "users": [
+    {
+      "name": "Alice Smith",
+      "email": "asmith@example.com",
+      "phone": "987-654-3210",
+      "website": "alicesmith.com",
+      "id": "2"
+    },
+    {
+      "name": "Bob William",
+      "email": "bobw@example.com",
+      "phone": "555-123-4567",
+      "website": "bobworks.io",
+      "id": "3"
+    },
+    {
+      "name": "Carol Miller",
+      "email": "carolm@example.com",
+      "phone": "111-222-3333",
+      "website": "carolmiller.net",
+      "id": "4"
+    },
+    {
+      "name": "David ",
+      "email": "dlee@example.com",
+      "phone": "444-555-6666",
+      "website": "davidlee.org",
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "username": "esanchez",
+      "name": "Eva Sanchez",
+      "email": "eva.s@example.com",
+      "phone": "777-888-9999",
+      "website": "evasanchez.me",
+      "address": {
+        "street": "987 Maple Road",
+        "suite": "Suite 6",
+        "city": "Miami",
+        "zipcode": "33101"
+      },
+      "company": {
+        "name": "Sanchez Solutions"
+      }
+    },
+    {
+      "name": "Frank Chen",
+      "email": "fchen@example.com",
+      "phone": "222-333-4444",
+      "website": "hello.cm",
+      "id": "7"
+    },
+    {
+      "name": "Grace Thomas",
+      "email": "gractet@example.com",
+      "phone": "333-444-5555",
+      "website": "hii.com",
+      "id": "8"
+    },
+    {
+      "id": "9",
+      "username": "hjames",
+      "name": "Henry James",
+      "email": "henryj@example.com",
+      "phone": "888-999-0000",
+      "website": "henryjames.dev",
+      "address": {
+        "street": "333 Walnut St",
+        "suite": "Apt. C",
+        "city": "Boston",
+        "zipcode": "02101"
+      },
+      "company": {
+        "name": "James Industries"
+      }
+    },
+    {
+      "id": "10",
+      "username": "ikhan",
+      "name": "Imran Khan",
+      "email": "ikhan@example.com",
+      "phone": "666-777-8888",
+      "website": "imrankhan.com",
+      "address": {
+        "street": "444 Redwood Lane",
+        "suite": "Villa 9",
+        "city": "Phoenix",
+        "zipcode": "85001"
+      },
+      "company": {
+        "name": "Khan Global"
+      }
+    },
+    {
+      "name": "siva",
+      "email": "siva@gmailcom",
+      "phone": "76777768826",
+      "website": "www.excelr.com",
+      "id": "bfbe"
+    },
+    {
+      "id": "7d99",
+      "name": "jagadeesh",
+      "phone": "8563237789",
+      "email": "jaga@gmail.com",
+      "username": "",
+      "website": "hhydwjw.com"
+    },
+    {
+      "id": "1ef2",
+      "name": "chandu",
+      "phone": "8765438654",
+      "email": "cgandu@gmail.com",
+      "username": "chandu",
+      "website": "chndu.com"
+    },
+    {
+      "id": "2070",
+      "name": "Lenin",
+      "phone": "976678",
+      "email": "lenin@gmail.com",
+      "username": "lenin",
+      "website": "ll.com"
+    }
+  ]
+}
