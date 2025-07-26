@@ -1,0 +1,205 @@
+.inputName{
+    font-size: 11px;
+    /* text-align: center; */
+    padding: 1px 143px 4px 1px;
+    border: 2px solid rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+#offcanvasRight{
+    position: absolute;
+    width:348px;
+}
+
+.dropdown,
+.dropdown-menu,
+.offcanvas-body {
+  overflow: visible !important;
+}
+
+
+.offcanvas-body p{
+    margin-bottom: 3px;
+    font-weight: 450;
+    font-size: 13px;
+}
+
+.redCir svg{
+    color: red;
+    height: 10px;
+    width: 10px;
+}
+
+.redCir {
+    font-size: 12px;
+    font-weight: 500;
+    padding-right: 15px;
+}
+
+.greenCir svg{
+    color: green;
+    height: 10px;
+    width: 10px;
+}
+
+.greenCir {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.span{
+    padding-left: 122px;
+    padding-top: 12px;
+}
+
+.dropdown button{
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: black;
+    width: 242px;
+    height: 38px;
+    text-align: left;
+}   
+
+.dropdown-toggle{
+    text-align: right;
+}
+
+/* .dropdown-toggle::after{
+    margin-left: 7.255em;
+} */
+
+/* .dropdown-item{
+    color: rgb(0,0,0);
+    background-color: #f0f0f0;
+} 
+.dropdown-menu li{
+    padding: 0px 0px !important;
+    cursor: pointer;
+}
+
+.dropdown-menu li+li{
+    border: 1px solid #f0f0f0;
+
+} */
+/* .dropdown{
+    visibility: hidden;
+} */
+
+/* .dropdown-item.active{
+    background-color: #f0f0f0 !important;
+    color: black;
+} */
+
+.addSegLink button{
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+    color: blue;
+}
+
+.btn.btn-secondary{
+    background-color: white;
+    color: black;
+}
+
+/* Dropdown.css */
+/* .dropdown {
+  position: relative;
+  display: inline-block;
+}
+*/
+.dropdown-btn {
+  /* padding: 8px 12px; */
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.arrow {
+  margin-left: 8px;
+}
+
+.dropdown-menu {
+    width: 246px;
+    height: 32px;
+    background-color: white;
+}
+
+.dropdown-menu li {
+  /* padding: 8px 12px; */
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border: 1px solid #f0f0f0;
+}
+
+.dropdown-menu li:hover {
+  background-color: blue;
+} 
+
+.footer span{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* .footer span button{
+    padding-left: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    /* font-size: 10px; */
+
+
+.footer{
+    background-color: #f0f0f0;
+    height: 57px;
+}
+
+/* .footer span button:hover{
+    background-color: blue;
+} */
+
+/* From Uiverse.io by bandirevanth */ 
+.custom-btn {
+    width: 170px;
+    margin-left: 10px;
+    height: 35px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btn-1 {
+ background: rgb(188, 179, 202);
+ background: linear-gradient(0deg, #47d0e3 0%, #158a9a 100%);
+ border: none;
+}
+
+.btn-1:before {
+ height: 0%;
+ width: 2px;
+}
+
+.btn-1:hover {
+ box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+.dropdownsBox{
+    border: 1px solid rgb(66, 63, 58);
+}
