@@ -13,8 +13,21 @@ body{
     z-index: 1234;
     border: 2px solid rgb(248, 242, 242);
     margin-left: 204px;
-    margin-top: 100px;
-    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 31px;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 2px 11px 2px 15px;
 
+} 
+
+.btnfix:hover{
+   box-shadow: 0 8px 12px blueviolet;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start; /* or center */
+  padding: 20px;
+  margin-top: 60px;
 }

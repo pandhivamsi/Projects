@@ -5,11 +5,16 @@ import { FaPlus } from "react-icons/fa6";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import Dropdown from './Dropdown';
+import axios from 'axios'
+import {toast} from 'react-toastify'
 // import { Dropdown } from 'bootstrap';
 
 
-const SavingSegment = () => {
+const SavingSegment = ({onUpdated}) => {
   let [dropdownData, setDropdownData] = useState([])
+  let [segmentName,setSegmentName] = useState()
+  const closeBtnRef = useRef(null);
+
 
   const options = ["First Name", "Last Name", "Gender", "Account Name", "Age", "State", "City"];
   const traitTypeMap = {
@@ -21,6 +26,25 @@ const SavingSegment = () => {
   "City": "group",
   "Account Name": "group"
 };
+
+const sendSegement = async() =>{
+ const payload = {
+        segment_name: segmentName,
+        schema: dropdownData
+          .filter(d => d.value)
+          .map(d => ({
+            [d.value.toLowerCase().replace(/\s+/g, "_")]: d.value
+          }))
+  };
+  let suc = await axios.post("http://localhost:8080/segments",payload)
+  setDropdownData([]);
+  setSegmentName("");
+  if (closeBtnRef.current) {
+    closeBtnRef.current.click();
+  }
+  toast("send success")
+  onUpdated()
+}
 
 const getDotColor = (trait) => {
   return traitTypeMap[trait] === "group" ? "green" : "red";
@@ -55,17 +79,17 @@ const handleRemove = (idToRemove) => {
       <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div className="offcanvas-header" style={{ paddingBottom: "6px", backgroundColor: "#47d0e3" }}>
           <h5 className="offcanvas-title" id="offcanvasRightLabel">Saving Segment</h5>
-          <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button ref={closeBtnRef} type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div className="offcanvas-body">
           <p>Enter the Name of the Segment</p>
-          <input className="inputName" type="text" placeholder='Name of the Segment' />
+          <input className="inputName" type="text" placeholder='Name of the Segment' onChange={(e)=>{setSegmentName(e.target.value)}}/>
           <p>To save your segment, you need to add the schemas to build the query</p>
           <div className='span'>
             <span className='redCir'><FaCircle />  -User Traits</span>
             <span className='greenCir'><FaCircle />  -Group Traits</span>
           </div>
-          <div className={`$dropdownsBox`}>
+          <div className={`${dropdownData.length > 0 ? "dropdownsBox":""}`}>
           {
             dropdownData.map((data)=>{
               return(
@@ -78,7 +102,7 @@ const handleRemove = (idToRemove) => {
         </div>
         <div className="footer">
             <span>
-              <button className='custom-btn btn-1'>Save the Segment</button>
+              <button onClick={sendSegement} className='custom-btn btn-1'>Save the Segment</button>
               <button  className ='custom-btn btn-1' type="button" data-bs-dismiss="offcanvas" aria-label="Close">Cancel</button>
             </span>
         </div>
