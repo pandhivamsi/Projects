@@ -12,7 +12,7 @@ import {toast} from 'react-toastify'
 
 const SavingSegment = ({onUpdated}) => {
   let [dropdownData, setDropdownData] = useState([])
-  let [segmentName,setSegmentName] = useState()
+  let [segmentName,setSegmentName] = useState("")
   const closeBtnRef = useRef(null);
 
 
@@ -103,7 +103,10 @@ const handleRemove = (idToRemove) => {
         <div className="footer">
             <span>
               <button onClick={sendSegement} className='custom-btn btn-1'>Save the Segment</button>
-              <button  className ='custom-btn btn-1' type="button" data-bs-dismiss="offcanvas" aria-label="Close">Cancel</button>
+              <button  onClick={()=>{
+                setDropdownData([]);
+                setSegmentName("");
+              }} className ='custom-btn btn-1' type="button" data-bs-dismiss="offcanvas" aria-label="Close">Cancel</button>
             </span>
         </div>
       </div>
