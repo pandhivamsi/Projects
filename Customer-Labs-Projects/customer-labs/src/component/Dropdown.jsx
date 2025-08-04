@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
 import './dropdown.css'
-import { FaCircle,FaMinus } from "react-icons/fa";
+import { FaCircle,FaMinus } from "react-icons/fa6";
 
 
 const Dropdown = ({data,handleSelectDropdownValue,dotColor,handleRemove}) => {
-  // const[selected,setSelected] = useState("Select Option")
-
   return (
     <div>
       <div className="d-flex align-items-center mb-2 gap-2">

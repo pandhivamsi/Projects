@@ -26,7 +26,6 @@ const Home = () => {
           </div>
         </nav>
         <div>
-          {/* <button onClick={()=>{setPopup(1)}} style={{color:"white", border:"2px solid #f8f2f2", marginLeft: "204px",marginTop: "100px"}}>Save Segment</button> */}
           <button onClick={() => setPopup(true)} className="btnfix" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Save Segment</button>
         </div>
         <div className = "card-container">

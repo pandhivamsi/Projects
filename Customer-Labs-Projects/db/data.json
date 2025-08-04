@@ -92,6 +92,15 @@
           "gender": "Gender"
         }
       ]
+    },
+    {
+      "id": "7a10",
+      "segment_name": "sjdak",
+      "schema": [
+        {
+          "state": "State"
+        }
+      ]
     }
   ]
 }
