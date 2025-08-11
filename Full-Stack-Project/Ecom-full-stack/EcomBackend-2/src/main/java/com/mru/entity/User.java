@@ -15,6 +15,7 @@ public class User {
 	private String username;
 	private String password;
 	private String role;
+	private String img;
 	public Long getId() {
 		return id;
 	}
@@ -39,20 +40,27 @@ public class User {
 	public void setRole(String role) {
 		this.role = role;
 	}
+	public String getImg() {
+		return img;
+	}
+	public void setImg(String img) {
+		this.img = img;
+	}
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password=" + password + ", role=" + role + "]";
+		return "User [id=" + id + ", username=" + username + ", password=" + password + ", role=" + role + ", img=" + img + "]";
 	}
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public User(Long id, String username, String password, String role) {
+	public User(Long id, String username, String password, String role, String img) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.password = password;
 		this.role = role;
+		this.img = img;
 	}
 	
 	

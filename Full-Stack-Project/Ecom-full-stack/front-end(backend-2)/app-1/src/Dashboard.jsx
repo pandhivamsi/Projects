@@ -42,9 +42,9 @@ const Dashboard = () => {
 
       </div>
 
-      <button className="logout-button-sticky" onClick={handleLogout}>
+      {/* <button className="logout-button-sticky" onClick={handleLogout}>
         Logout
-      </button>
+      </button> */}
 
       <div className="dashboard-content">
         <Outlet />

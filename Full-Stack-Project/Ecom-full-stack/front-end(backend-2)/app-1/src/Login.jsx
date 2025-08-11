@@ -33,6 +33,7 @@ const Login = () => {
     .then(data => {
       sessionStorage.setItem("token", data.token);
       sessionStorage.setItem("role", data.role);
+      sessionStorage.setItem("id",data.id);
 
       if (data.role === "ROLE_USER") {
         navigate("/dashboard");

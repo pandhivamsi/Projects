@@ -54,6 +54,7 @@ public class MRUController {
 			response.put("login", "success");
 			response.put("token", token);
 			response.put("role", user.get().getRole());
+			response.put("id", user.get().getId().toString());
 			return ResponseEntity.ok(response);
 		}else {
 			Map<String, String> response1 = new HashMap<>();

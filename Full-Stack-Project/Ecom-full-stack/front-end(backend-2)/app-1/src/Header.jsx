@@ -2,10 +2,14 @@ import { Link, useLocation } from "react-router-dom";
 import { useCart } from "./CartContext";
 import "./Header.css";
 import logo from "./assets/shop.png";
+import noImage from "./assets/noImage.JPG"
+import { useState } from "react";
+import Profile from "./Profile";
 
 const Header = () => {
   const { cart } = useCart();
   const pathname = window.location.pathname;
+  const [isprofile, setIsprofile] = useState(false)
 
   // Pages to show cart icon
   const showCartIconPaths = [
@@ -29,6 +33,15 @@ const Header = () => {
           </Link>
         </div>
       )}
+      {
+         <Profile img={noImage} />
+      }
+      {
+        showCartIconPaths.some(path => pathname.includes(path)) && (
+          <div >
+            <img className="profile" data-bs-toggle="modal" data-bs-target="#profileModal" style={{ height: '40px', cursor: 'pointer',width:"40px",borderRadius:"50%" }} src={noImage} alt="profile"/>          
+          </div>
+        )}
     </header>
   );
 };
