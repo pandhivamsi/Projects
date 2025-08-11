@@ -28,6 +28,7 @@ const SavingSegment = ({ onUpdated }) => {
   };
 
   const sendSegement = async () => {
+    if(segmentName && dropdownData){
     const payload = {
       segment_name: segmentName,
       schema: dropdownData
@@ -45,6 +46,10 @@ const SavingSegment = ({ onUpdated }) => {
     toast("send success")
     onUpdated()
   }
+  else{
+    toast("Data Empty")
+  }
+}
 
   const getDotColor = (trait) => {
     return traitTypeMap[trait] === "group" ? "green" : "red";

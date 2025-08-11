@@ -1,18 +1,6 @@
 {
   "segments": [
     {
-      "segment_name": "last_10_days_blog_visits",
-      "schema": [
-        {
-          "first_name": "First name"
-        },
-        {
-          "last_name": "Last name"
-        }
-      ],
-      "id": "47b7"
-    },
-    {
       "id": "4611",
       "segment_name": "daraer",
       "schema": [
@@ -37,45 +25,6 @@
       ]
     },
     {
-      "id": "ea5d",
-      "segment_name": "test123",
-      "schema": [
-        {
-          "account_name": "Account Name"
-        },
-        {
-          "state": "State"
-        },
-        {
-          "gender": "Gender"
-        }
-      ]
-    },
-    {
-      "id": "6b63",
-      "segment_name": "sadvgdasg",
-      "schema": [
-        {
-          "account_name": "Account Name"
-        }
-      ]
-    },
-    {
-      "id": "72cb",
-      "segment_name": "example",
-      "schema": [
-        {
-          "last_name": "Last Name"
-        },
-        {
-          "state": "State"
-        },
-        {
-          "age": "Age"
-        }
-      ]
-    },
-    {
       "id": "17da",
       "segment_name": "test432",
       "schema": [
@@ -85,18 +34,12 @@
       ]
     },
     {
-      "id": "0a76",
-      "segment_name": "text",
+      "id": "3e93",
+      "segment_name": "Vamsi",
       "schema": [
         {
-          "gender": "Gender"
-        }
-      ]
-    },
-    {
-      "id": "7a10",
-      "segment_name": "sjdak",
-      "schema": [
+          "first_name": "First Name"
+        },
         {
           "state": "State"
         }

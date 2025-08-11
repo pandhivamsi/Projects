@@ -33,7 +33,7 @@ const Home = () => {
             segments.map((data) => {
               return (
                 <div key={data.id}>
-                  <Card data = {data} />
+                  <Card data = {data} onUpdated = {fetchData} />
                 </div>
               )
             })
