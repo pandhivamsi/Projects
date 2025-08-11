@@ -1,0 +1,43 @@
+/* Education Table Styling */
+.edu-table {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.edu-table thead {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.edu-table th, 
+.edu-table td {
+  vertical-align: middle;
+  padding: 12px;
+  text-align: center;
+}
+
+.edu-table tbody tr:hover {
+  background-color: rgba(13, 110, 253, 0.05);
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .edu-table th, .edu-table td {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+}
+#education{
+  opacity: 0;
+  transform: translateZ(40px);
+  animation: fadeInUp 2.8s ease forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}

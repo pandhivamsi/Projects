@@ -1,0 +1,72 @@
+/* About Section Styling */
+#about {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* Section heading spacing */
+#about .section-heading {
+  margin-bottom: 2rem;
+}
+
+/* Lead paragraph emphasis */
+#about .lead {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Paragraph border styling */
+#about p {
+  margin-bottom: 1rem;
+  padding: 1rem 1.2rem;
+  border-left: 4px solid #0d6efd; /* Theme color border */
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for paragraphs */
+#about p:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* Optional image styling (if you add profile pic later) */
+.about-image {
+  max-width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Two-column layout for large screens */
+@media (min-width: 768px) {
+  #about .about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #about .about-text {
+    flex: 1;
+  }
+}
+
+/* Smooth fade-in effect */
+#about {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
